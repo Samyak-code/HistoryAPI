@@ -38,7 +38,7 @@ function onGetHistory(event)
 
     var dateinput = document.getElementById('dateinput').value;
     var monthinput = document.getElementById('monthinput').value;
-
+    alert("Loading")
     console.log(dateinput, monthinput);
 
     fetch("http://history.muffinlabs.com/date/" + monthinput + "/" + dateinput)
