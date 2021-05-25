@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    font-size: 15px;
+    grid-gap: 1em;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  body > header, body > footer {
+    display: flex;
+  }
+  header > hgroup > h1 {
+    font-size: 1.2em;
+  }
+  header > hgroup {
+    padding-left: 1.0em;
+  }
+  header > nav > ul {
+    font-size: 0.9em;
+    margin-left: 0.5em;
+    display: flex;
+  }
+  header > nav > ul > li {
+    margin-right: 0.5em;
+  }
+
+  body > main, body > footer {
+    padding-left: 1.0em;
+  }
+  main {
+    max-width: 50em;
+  }
+
+  main h1 {
+    font-size: 1.2em;
+  }
+  main h2 {
+    font-size: 1.1em;
+  }
+
+  section {
+    margin-bottom: 2.0em;
+  }
+  
+  #ticker {
+    font-size: 0.9em;
+  }
+  ul.ticker > li:nth-child(n+2) {
+    display: none;
+  }
+
+  .ticker {
+    opacity: 0;
+    min-height: 3.0em;
+  }
+  .fade-in-and-out {
+    animation: fade 10s linear;
+    opacity: 1;
+  }
+  @keyframes fade {
+    0%, 100% { opacity: 0; }
+    5%, 95% { opacity:1; }
+  }
+
+input {
+    margin: 10px;
+    height:60%;
+}
