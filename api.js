@@ -41,7 +41,7 @@ function onGetHistory(event)
     alert("Loading")
     console.log(dateinput, monthinput);
 
-    fetch("http://history.muffinlabs.com/date/" + monthinput + "/" + dateinput)
+    fetch("https://history.muffinlabs.com/date/" + monthinput + "/" + dateinput)
         .then(response => response.json())
         .then(data => {
             console.log(data);
